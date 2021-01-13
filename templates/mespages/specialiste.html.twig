@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Specialiste{% endblock %}</title>
+ {% block stylesheets %}
+ <link rel="icon" href="/images/favicon.png">
+ <style>
+ ul{
+    margin-left: 85px;
+ }
+
+ </style>
+         <link rel="stylesheet"   href="/css/blog.css">
+         <link rel="stylesheet"   href="/bootstrap.min.css">
+         <link rel="stylesheet"   href="/js/jquery-3.4.1.js">
+         <link rel="stylesheet"   href="/js/bootstrap.min.js">
+         <link rel="stylesheet"   href="/js/popper.js">
+		 <link rel="stylesheet"   href="/css/font-awesome.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet"   href="/css/bootstrap-theme.css">
+ {% endblock %}
+
+   {% block javascripts %}
+   
+   {% endblock %}
+
+<link href="bootstrap/css/bootstrap.min.css"rel="stylesheet">
+        <script src="bootstrap/js/jquery-3.4.1.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/popper.js"></script>
+
+</head>
+
+<body>
+
+
+ {% block body %}
+
+<div class="container5">
+  <div class="row">
+   
+	
+    
+	
+    <div class="col-6">
+
+      <a href="{{path('acceuil')}}">   <h3 contenteditable data-heading="Frozen" 
+                style=" left: 20%;
+                color: transparent;
+                font-size: 5vw;
+                margin: 0;
+                font-family: 'frozen', serif;
+                font-weight: 700;
+                background: url(/images/8.jpg);
+                -webkit-background-clip: text;
+                background-size: contain;
+                width: 100%; 
+                font-weight: 900;">MyRendez-Vous
+            </h3></a>
+    </div>
+	
+	
+    <div class="col">
+     <p>TELEPHONE: 33 854 00 00 |<a href="/inscription">Compte </a><p> 
+    </div>
+  </div>
+  <div class="row_2">
+   
+   <nav>
+<ul> 
+<li><form action="#" id="searchthis" method="get">
+<input id="search" name="q" type="text" placeholder="Que recherhez-vous?" />
+<input id="search-btn" type="submit" value="Rechercher" />
+</form></li>
+
+
+</ul>
+</nav>
+  </div>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="{{path('acceuil')}}" class="active"><strong>ACCEUIL</strong></a>
+  <a href=hopitaux><strong>HOPITAUX</strong></a>
+  <a href=specialiste><strong>SPECIALISTES</strong></a>
+  <a href=/inscription><strong>RENDEZ-VOUS</strong></a>
+   <a href=contact><strong>CONTACT</strong></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<br>
+
+<div id="ourteam"></div>
+    <div class="container-fluid1"></div>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-12 text-center">
+                <h3><span class="merabi">Les médecins spécialistes </span></h3>
+            
+                <p class="mecoo">Nos médecins spécialistes se soucient de vous et de la santé de votre famille
+
+</p>
+            </div> </div></div></br></br>
+
+
+
+             <div class="col-lg-12">
+              <div id="banner_wrapper">
+                <div id="banner">
+        
+                <div class="carousel-box">
+                  <div class="inner">
+                  <div class="carousel main">
+                  <ul>
+                    <li>
+                      <div class="banner">
+                        <div class="banner_inner">
+                          <a href="/inscription">
+                            
+                              <figure><img src="/MEDCIN/11.jpg" alt="" class="img"  height=280><em></em></figure>
+                              <div class="caption">
+                                <center><div class="text2">Dr. Alassane Ndiaye</div></center>
+                                <center><div class="textorange">Cancérologue</div></center>
+                                <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                              </div>
+                          </a>
+                        </div>
+                     </div>
+                    </li>
+
+                <li>
+                  <div class="banner">
+                    <div class="banner_inner">
+                      <a href="/inscription">
+                        
+                        <figure><img src="/MEDCIN/13.jpg" alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            <center><div class="text2">Dr. Souleymane Faye</div></center>
+                          <center><div class="textorange">CHIRURGIEN CARDIAQUE</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner">
+                    <div class="banner_inner">
+                      <a href="/inscription"> 
+                        
+                        <figure><img src="/MEDCIN/12.jpg" alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            <center><div class="text2">Dr. Fatou Mboup</div></center>
+                          <center><div class="textorange">SAGE FEMME</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner">
+                    <div class="banner_inner">
+                      <a href="/inscription">
+                       
+                        <figure><img src="/MEDCIN/14.jpg " alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            <center><div class="text2">Dr. Laura Badji</div></center>
+                          <center><div class="textorange">PÉDIATRE</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                
+              
+                <li>
+                
+                  <div class="banner">
+                  <br><br>
+                    <div class="banner_inner">
+                      <a href="/inscription">
+                       
+                        <figure><img src="/MEDCIN/4.jpg" alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            
+                            <center><div class="text2">Dr. Ibou Fall</div></center>
+                          <center><div class="textorange">Cancérologue</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner">
+                  <br><br>
+                    <div class="banner_inner">
+                      <a href="/inscription">
+                        
+                        <figure><img src="/MEDCIN/15.jpg" alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                                                      
+                            <center><div class="text2">Dr. Omar diaw</div></center>
+                          <center><div class="textorange">CHIRURGIEN CARDIAQUE</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner">
+                  <br><br>
+                    <div class="banner_inner">
+                      <a href="/inscription">
+                        
+                        <figure><img src="/MEDCIN/16.jpg" alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            
+                            <center><div class="text2">Dr. Maimouna Sow</div></center>
+                          <center><div class="textorange">INFIRMIÈRE</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner">
+                  <br><br>
+                    <div class="banner_inner">
+                      <a href="/inscription">
+                        
+                        <figure><img src="/MEDCIN/6.jpg" alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            
+                            <center><div class="text2">Dr. Fama dia</div></center>
+                          <center><div class="textorange">PEDIATRE</div></center>
+                            <center><div class="btn btn-default">APPOINTMENT</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+              <li>
+                  <div class="banner">
+                  <br><br>
+                    <div class="banner_inner">
+                      <a href="/inscription">
+                        
+                        <figure><img src="/MEDCIN/2.jpg" alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            <center><div class="text2">Dr. Bamba Tounkara</div></center>
+                          <center><div class="textorange">CHIRURGIEN CARDIAQUE</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner">
+                  <br><br>
+                    <div class="banner_inner">
+                      <a href="/inscription"> 
+                        
+                        <figure><img src="/MEDCIN/8.jpg" alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            <center><div class="text2">Dr. HANNA Cisse</div></center>
+                          <center><div class="textorange">INFIRMIÈRE</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="banner">
+                  <br><br>
+                    <div class="banner_inner">
+                      <a href="/inscription">
+                       
+                        <figure><img src="/MEDCIN/3.jpg " alt="" class="img"  height=280><em></em></figure>
+                        <div class="caption">
+                          
+                            <center><div class="text2">Dr. Sophie Mane</div></center>
+                          <center><div class="textorange">PÉDIATRE</div></center>
+                            <center><div class="btn btn-default">RENDEZ-VOUS</div></center>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>            
+    </div>
+</div>  </br>
+
+
+
+
+								</div></div></div>
+            </div></p>
+         
+
+
+       </div>
+
+
+
+
+<br><br>
+<!-- Footer -->
+
+	<footer class="footer" style="background-image: url('footer.jpg');>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="t.jpg" data-speed="0.8"></div>
+		<div class="footer_content">
+			<div class="container">
+				<div class="row">
+
+					
+					
+
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer_bar"  style="background-color:#232323 ;">
+			<div class="container">
+				<div class="row">
+					<div class="col"   >
+						<div class="footer_bar_content d-flex flex-sm-row flex-column align-items-lg-center align-items-start justify-content-start">
+							<nav class="footer_nav" style="background-color:#232323 ">
+								<ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+									<li class="m"><a href="{{path('acceuil')}}"><strong> ACCEUIL</strong> </a> 
+										<li class="m">  <a href=mespages/hopitaux><strong>HOPITAUX</strong></a> </li>
+										<li class="m"><a href=mespages/specialiste><strong>SPECIALITES</strong></a></li> 
+										<li class="m"><a href=/inscription><strong>RENDEZ-VOUS</strong></a> </li>
+										<li class="m"><a href=mespages/contact><strong>CONTACTER-NOUS</strong></a></li>
+								</ul>
+							</nav>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+{% endblock %}
+    </body>
+</html>
+
+

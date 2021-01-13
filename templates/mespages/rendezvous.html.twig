@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Rendez-vous{% endblock %}</title>
+ {% block stylesheets %}
+ <link rel="icon" href="/images/favicon.png">
+  <style>
+
+form label {
+    color: blue;
+     padding-right: 50px;
+     font-weight: bold;
+     font-size: 18px;
+     width: 280px;
+      form_widget: 300px;
+       
+}
+.foo {
+     width: 500px;
+     height: 35px;
+     padding-top: 6px;
+}
+button{
+     width: 200px;
+}
+.btn-success{
+    margin-left: 170px;
+    margin: 40px;
+}
+ </style>
+         <link rel="stylesheet"   href="/css/blog.css">
+         <link rel="stylesheet"   href="/bootstrap.min.css">
+         <link rel="stylesheet"   href="/js/jquery-3.4.1.js">
+         <link rel="stylesheet"   href="/js/bootstrap.min.js">
+         <link rel="stylesheet"   href="/js/popper.js">
+		 <link rel="stylesheet"   href="/css/font-awesome.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet"   href="/css/bootstrap-theme.css">
+ {% endblock %}
+
+   {% block javascripts %}
+   
+   {% endblock %}
+
+<link href="bootstrap/css/bootstrap.min.css"rel="stylesheet">
+        <script src="bootstrap/js/jquery-3.4.1.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/popper.js"></script>
+
+</head>
+
+<body>
+
+
+ {% block body %}
+
+<div class="container5">
+  <div class="row">
+   
+	
+    
+	
+    <div class="col-6">
+
+     <a href="{{path('acceuil')}}">   <h3 contenteditable data-heading="Frozen" 
+                style=" left: 20%;
+                color: transparent;
+                font-size: 5vw;
+                margin: 0;
+                font-family: 'frozen', serif;
+                font-weight: 700;
+                background: url(/images/8.jpg);
+                -webkit-background-clip: text;
+                background-size: contain;
+                width: 100%; 
+                font-weight: 900;">MyRendez-Vous
+            </h3></a>
+    </div>
+	
+	
+    <div class="col">
+     <p>TELEPHONE: 33 854 00 00 |<a href="/inscription">Compte </a><p> 
+    </div>
+  </div>
+  <div class="row_2">
+   
+   <nav>
+<ul> 
+<li><form action="#" id="searchthis" method="get">
+<input id="search" name="q" type="text" placeholder="Que recherhez-vous?" />
+<input id="search-btn" type="submit" value="Rechercher" />
+</form></li>
+
+
+</ul>
+</nav>
+  </div>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="{{path('acceuil')}}" class="active"><strong>ACCEUIL</strong></a>
+  <a href=hopitaux><strong>HOPITAUX</strong></a>
+  <a href=specialiste><strong>SPECIALISTES</strong></a>
+  <a href=mespages/rendezvous><strong>RENDEZ-VOUS</strong></a>
+   <a href=contact><strong>CONTACT</strong></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div >
+		
+			 <h3>Prise de rendez-vous</h3>
+		
+<!-- zone de connexion -->
+<h4> Creation de compte </h4>
+<div class="form">
+{{ form_start(form) }}
+{{ form_row(form.nom, {'label': 'Nom ',  'attr': {'placeholder': 'entrer votre nom...', 'class': 'foo'}  }) }}
+{{ form_row(form.prenom, {'label': 'Prenom ', 'attr': {'placeholder': 'entrer votre prenom...', 'class': 'foo'}  }) }}    
+{{ form_row(form.email, {'attr': {'placeholder': 'email...', 'class': 'foo'}  }) }}
+{{ form_row(form.adresse, {'label': 'adresse ', 'attr': {'placeholder': 'adresse...', 'class': 'foo'}  }) }}
+{{ form_row(form.telephone, {'label': 'telephone ', 'attr': {'placeholder': 'telephone...', 'class': 'foo'}  }) }}       
+{{ form_row(form.dates, {'label': 'dates ', 'attr': {'placeholder': 'dates...', 'class': 'foo'}  }) }}       
+
+<button type="submit" class="btn btn-success">Inscription</button>
+<br>OU <a href="/connexion" >Se connecter</a>
+{{ form_end(form) }}
+</div>
+     
+
+
+	</div>
+   <div class="phtext3">
+
+
+  <div >
+ <div >
+ 
+       <label for="Specialiste">Specialiste</label>
+       <select name="Specialiste" id="pays">
+           <optgroup>
+               <option value="cardiologue">cardiologue</option>
+               <option value="dentisterie">cardiologue</option>
+               <option value="cancerologue">cancerologue</option>
+               <option value="Diabetologue">Diabetologue</option>
+               <option value="churichien-dentiste">churichien-dentiste</option>
+                <option value="Infirmier">Infirmier</option>
+               <option value="Infectologue">Infectologue</option>
+           </optgroup>
+            </div><br/>
+            <div>
+             <label for="Specialiste">Specialiste</label>
+              <select name="Specialiste" id="pays">
+            <input type="date" />
+              </div></br>
+            <button type="IN" id="comment_form_VALIDE" name="comment_form[submit]">VALIDE</button>
+                  </div>
+                  <br/>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+
+
+<!-- Footer -->
+
+	<footer class="footer" style="background-image: url('footer.jpg');>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="t.jpg" data-speed="0.8"></div>
+		<div class="footer_content">
+			<div class="container">
+				<div class="row">
+
+					
+					
+
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer_bar"  style="background-color:#232323 ;">
+			<div class="container">
+				<div class="row">
+					<div class="col"   >
+						<div class="footer_bar_content d-flex flex-sm-row flex-column align-items-lg-center align-items-start justify-content-start">
+							<nav class="footer_nav" style="background-color:#232323 ">
+								<ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+									<li class="m"> <a href="#"><strong> ACCEUIL</strong> </a> 
+										<li class="m"><a href="#"><strong>HOPITAUX</strong></a> </li>
+										<li class="m"><a href="#"><strong>SPECIALITES</strong></a></li> 
+										<li class="m"><a href="#"><strong>RENDEZ-VOUS</strong></a> </li>
+										<li class="m"><a href="#"><strong>CONTACTER-NOUS</strong></a></li>
+								</ul>
+							</nav>
+
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+{% endblock %}
+    </body>
+</html>

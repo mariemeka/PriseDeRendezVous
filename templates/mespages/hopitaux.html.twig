@@ -1,0 +1,423 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Hopitaux{% endblock %}</title>
+ {% block stylesheets %}
+ <link rel="icon" href="/images/favicon.png">
+         <link rel="stylesheet"   href="/css/blog.css">
+         <link rel="stylesheet"   href="/bootstrap.min.css">
+         <link rel="stylesheet"   href="/js/jquery-3.4.1.js">
+         <link rel="stylesheet"   href="/js/bootstrap.min.js">
+         <link rel="stylesheet"   href="/js/popper.js">
+		 <link rel="stylesheet"   href="/css/font-awesome.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet"   href="/css/bootstrap-theme.css">
+ {% endblock %}
+
+   {% block javascripts %}
+   
+   {% endblock %}
+
+<link href="bootstrap/css/bootstrap.min.css"rel="stylesheet">
+        <script src="bootstrap/js/jquery-3.4.1.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/popper.js"></script>
+
+</head>
+
+<body>
+
+
+ {% block body %}
+
+<div class="container5">
+  <div class="row">
+   
+	
+    
+	
+    <div class="col-6">
+
+       <a href="{{path('acceuil')}}">   <h3 contenteditable data-heading="Frozen" 
+                style=" left: 20%;
+                color: transparent;
+                font-size: 5vw;
+                margin: 0;
+                font-family: 'frozen', serif;
+                font-weight: 700;
+                background: url(/images/8.jpg);
+                -webkit-background-clip: text;
+                background-size: contain;
+                width: 100%; 
+                font-weight: 900;">MyRendez-Vous
+            </h3></a>
+    </div>
+	
+	
+    <div class="col">
+     <p>TELEPHONE: 33 854 00 00 |<a href="/inscription">Compte </a><p> 
+    </div>
+  </div>
+  <div class="row_2">
+   
+   <nav>
+<ul> 
+<li><form action="#" id="searchthis" method="get">
+<input id="search" name="q" type="text" placeholder="Que recherhez-vous?" />
+<input id="search-btn" type="submit" value="Rechercher" />
+</form></li>
+
+
+</ul>
+</nav>
+  </div>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="{{path('acceuil')}}" class="active"><strong>ACCEUIL</strong></a>
+  <a href=mespages/hopitaux><strong>HOPITAUX</strong></a>
+  <a href=specialiste><strong>SPECIALISTES</strong></a>
+  <a href=/inscription><strong>RENDEZ-VOUS</strong></a>
+   <a href=contact><strong>CONTACT</strong></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<div id="home">
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="/MEDCIN/HOPI/HOP6.jpg" alt="" height=300px width=100%>
+				
+    <div class="carousel-caption"><h4>MyRendez-Vous <br>Vous propose les meilleurs hopitaux du senegal </h4> </div>
+</div> 
+</div> 
+</div> 
+</div> 
+<br>
+    <div class="container">
+            <div class="row">
+        
+        <div class="col-md-12">
+            <center><h3><span class="merabi">Les hopitaux de Dakar </span></h3></center><br>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+ 
+<div class="container6">
+ <div class="row">
+    <div class="col-sm" style="margin-left:20px; margin-right:20px;">
+	    
+   <div class="card">
+         <a href="/mespages/specialiste"> <img src="/MEDCIN/HOPI/1.jpg" class="card-img-top" alt="Accroche HTML"></a>
+		   <div class="card-body">
+            <h3 class="card-title">MyRendez-Vous</h3>
+            <p class="card-text" style="text-align:left; ">
+             <strong> L’Hôpital principal de Dakar (HPD) </strong><br>
+               situé à Dakar dans l’ arrondissement de Dakar-Plateau, est un établissement public de santé à statut spécial 
+              ouvert au service public, il constitue selon sa devise un hôpital de référence en perpétuelle mutation. Hôpital colonial à l’origine, puis hôpital militaire français,
+               il est depuis 1971, hôpital d’instruction des armées du Sénégal sous la tutelle des Forces armées.
+                  <br>
+                 <strong>Les Services de L’Hôpital principal de Dakar</strong><br>
+Il est organisé en quatre grands services qui regroupent plusieurs départements :<br>
+<li>Services administratifs et techniques</li><br>
+<li>Services médicaux</li><br>
+<li>Services chirurgicaux</li><br>
+<li>Services médico-techniques</li><br>
+            </p>
+        </div>
+    </div>
+
+	</div>
+    
+
+	
+	
+    <div class="col-sm">
+	    
+   <div class="card">
+         <a href="/mespages/specialiste"> <img src="/MEDCIN/HOPI/3.jpg" class="card-img-top" alt="Accroche HTML"></a>  <div class="card-body">
+            <h3 class="card-title">Nos Medecins</h3>
+            <p class="card-text" style="text-align:left;">
+            L’hôpital général de Grand-Yoff enregistre, chaque année, environ 17 mille cas de traumatologie. C’est quasiment, entre 45 à 55 malades par jour’’, révèle le professeur Mouhamadou Habib Sy, chef du service d’Orthopédie-traumatologie de cette structure médicale. Selon Pr Sy, dans un hôpital régional par exemple, l’on peut enregistrer 25 à 30 malades par jour, alors que dans celui du type départemental, l’on y trouve entre 10 à 15 malades. Pr Sy intervenait à une séance académique axée sur  
+            ’’Les urgences traumatologiques graves : place et rôle du chirurgien orthopédique
+            </p>
+        </div>
+    </div>
+
+	</div>
+	
+    <div class="col-sm">
+	    
+   <div class="card">
+         <a href="/mespages/specialiste"> <img src="/MEDCIN/HOPI/4.jpg" class="card-img-top" alt="Accroche HTML"></a>
+        <div class="card-body">
+            <h3 class="card-title">Relation</h3>
+            <p class="card-text" style="text-align:left;">
+                <strong>Crée en 1912, le centre hospitalier national Aristide Le Dantec était appelé l’hôpital central
+ </strong><br>
+Crée en 1912, le centre hospitalier national Aristide Le Dantec était appelé l’hôpital central
+ en raison du rôle et de la place privilégiée qu’il occupait au niveau du Cap-Vert (actuelle région de Dakar).<br>
+pour se singulariser par rapport à « l’hôpital colonial » (actuel Hôpital Principal) qui avait une vocation militaire, 
+les autochtones, à la place de l’hôpital central, ont préféré le nom de l’hôpital Indigène. L’offre de production de service était composée de 400 lits et de 104 agents toute catégorie confondue. Les examens d’analyses de laboratoires s’exerçaient à l’Institut Pasteur de Dakar.
+ Les services de soins étaient très sollicités par les usagers déshérités qui venaient de partout.  <br>
+ Pour immortaliser le médecin major de 2e classe de troupes coloniales, le centre de référence portera en 1956 le nom de l’hôpital Aristide Le Dantec. 
+ Cet établissement comprenait 10 services médicaux avec des spécialités médicales.
+  </p>
+        </div>
+    </div>
+
+	</div>
+	
+  </div>
+  </div>
+
+<div class="container">
+            <div class="row">
+        
+        <div class="col-md-12">
+            <center><h3><span class="merabi">Les hopitaux de Thies </span></h3></center><br>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+ 
+<div class="container6">
+ <div class="row">
+    <div class="col-sm" style="margin-left:20px; margin-right:20px;">
+	    
+   <div class="card">
+         <a href="/mespages/specialiste"> <img src="/MEDCIN/HOPI/TH4.jpg" class="card-img-top" alt="Accroche HTML"></a>
+        <div class="card-body">
+            <h3 class="card-title">MyRendez-Vous</h3>
+            <p class="card-text" style="text-align:left; ">
+             <strong> L’hôpital Saint Jean de Dieu de Thiès  </strong><br>
+              construit par Monseigneur François Xavier NDIONE, premier évêque de Thiès, ouvrit ses portes le 1er décembre 1983.
+                La gestion fut alors confiée à l’Ordre Hospitalier des Frères de Saint Jean de Dieu dont la structure porte le nom.
+                  <br>
+                  Il assure sa mission par la mise en œuvre effective de tous les programmes nationaux de santé publique et par une offre de soins assez complète et de qualité, 
+                  accessible aux populations défavorisées.<br>
+                  L’Hôpital Saint Jean de Dieu compte:
+                 <strong> L’Hôpital Saint Jean de Dieu compte: 125 lits d’hospitalisation répartis sur 5 services</strong><br>
+<li>2 salles d’opération (une 3ème en cours d’équipement)</li><br>
+<li>1 stérilisation centrale</li><br>
+<li>1 service de consultations</li><br>
+<li>1 service de radiologie-échographie</li><br>
+<li>1 service de laboratoire biomédical</li><br>
+<li>1 service de kinésithérapie</li><br>
+            </p>
+        </div>
+    </div>
+
+	</div>
+	
+    <div class="col-sm">
+	    
+   <div class="card">
+
+   
+   
+        <a href="/mespages/specialiste"> <img src="/MEDCIN/HOPI/TH5.jpg" class="card-img-top" alt="Accroche HTML"></a>
+        <div class="card-body">
+            <h3 class="card-title">Nos Medecins</h3>
+            <p class="card-text" style="text-align:left;">
+             <strong> L’hôpital Saint Jean de Dieu de Thiès  </strong><br>
+            assure sa mission par la mise en œuvre effective de tous les programmes nationaux de santé publique
+            et par une offre de soins assez complète et de qualité, accessible aux populations défavorisées.
+             Compte tenu de sa position géographique dans une région disposant d’un bon réseau routier et de communication,
+              et de son excellente réputation bâtie sur les services offerts, l’HSJD s’est positionné comme une institution 
+           clé de la région médicale de Thiès qui compte 120 postes de santé, 9 centres de santés et 3 hôpitaux.
+            </p>
+        </div>
+    </div>
+
+	</div>
+	
+    <div class="col-sm">
+	    
+   <div class="card">
+   <a href="/mespages/specialiste"> <img src="/MEDCIN/HOPI/TH3.jpg" class="card-img-top" alt="Accroche HTML"></a>
+        
+        <div class="card-body">
+            <h3 class="card-title">Relation</h3>
+            <p class="card-text" style="text-align:left;">
+                <strong>LE CENTRE HOSPITALIER REGIONAL EL HADJI AHMADOU SAKHIR NDIEGUENE DE THIES  </strong><br>
+  Construit en 1972 Mise en service en 1980 <br> <strong>Les Services de L’Hôpital REGIONAL EL HADJI AHMADOU SAKHIR NDIEGUENE DE THIES :</strong><br>
+  
+Un service des urgences médico-chirurgicales<br>
+Une capacité d’hospitalisation <br>
+Chirurgie et spécialités chirurgicales <br>
+Pédiatrie <br>
+Gynécologie obstétrique <br>
+Service d’un genre <br>
+Laboratoire <br>
+Banque de Sang <br>
+Pharmacie <br>
+   </p>
+        </div>
+    </div>
+
+	</div>
+	
+  </div>
+  </div>
+   </div>
+    </div>
+     </div> </div> </div> </div></div></div>
+ </br></br></br>  
+
+
+
+<div class="stuff">
+		<div class="container">
+			<div class="row">
+
+				<!-- FAQ -->
+				<div class="col-lg-7">
+					<div class="faq">
+						<div class="faq_title">Maladies infectieuses</div>
+						<div class="elements_accordions">
+							<div class="accordions">
+
+								<div class="accordion_container">
+									<div class="accordion d-flex flex-row align-items-center active"><div>Panaris</div></div>
+									<div class="accordion_panel">
+										<div>
+											<p  style="text-align:left;">
+                        Dans la plupart des cas, le panaris est une infection bactérienne survenant sur le pourtour ou le dessous de l’ongle. Il se déclenche surtout chez les sujets qui rongent leurs ongles ou qui présentent des ongles coupés trop courts. En principe, les doigts des mains sont plus affectés que les orteils des pieds.</p>
+									
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion_container">
+									<div class="accordion d-flex flex-row align-items-center"><div>Tuberculose</div></div>
+									<div class="accordion_panel">
+										<div>
+											<p style="text-align:left;">La tuberculose est une maladie contagieuse d’origine bactérienne. Il s’agit de la deuxième maladie infectieuse la plus mortelle après le Virus de l’Immunodéficience Humaine (VIH/SIDA).
+
+												Malgré les traitements et le vaccin disponibles, la tuberculose n’est toujours pas éradiquée. Cette maladie cause la mort d’environ d’1.5 millions de personnes chaque année à travers le monde.</p>
+										<img src="/images/tuber.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion_container">
+									<div class="accordion d-flex flex-row align-items-center"><div>Sinusite</div></div>
+									<div class="accordion_panel">
+										<div>
+											<p  style="text-align:left;">La sinusite correspond à une inflammation des sinus. Les sinus sont des cavités osseuses recouvertes d’une muqueuse et réparties en quatre paires situées dans les os du visage. Chaque sinus communique avec les fosses nasales grâce à de petites ouvertures à travers lesquelles s’écoulent normalement le mucus.</p>
+											<img src="/images/sinus.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Latest News -->
+				<div class="col-lg-5">
+					<div class="news">
+						<div class="news_title">Dernières Infos</div>
+						<div class="news_container">
+
+							<!-- Latest News Post -->
+							<div class="latest d-flex flex-row align-items-start justify-content-start">
+								<div><div class="latest_image"><img src="images/dent.PNG" alt=""></div></div>
+								<div class="latest_content">
+									<div class="latest_title"><a href="http://sante.lefigaro.fr/medecine">Contraception: non, la pilule ne fait pas rétrécir le cerveau des femmes</a></div>
+								</div>
+							</div>
+
+							<!-- Latest News Post -->
+							<div class="latest d-flex flex-row align-items-start justify-content-start">
+								<div><div class="latest_image"><img src="images/avortement.PNG" alt=""></div></div>
+								<div class="latest_content">
+									<div class="latest_title"><a href="https://partenariatouaga.org/debat-lavortement-medicalise-senegal-entre-lobbying-resistance/">Débat sur l’avortement médicalisé au Sénégal: Entre lobbying et résistance</a></div>
+									
+									
+								</div>
+							</div>
+
+							<!-- Latest News Post -->
+							<div class="latest d-flex flex-row align-items-start justify-content-start">
+								<div><div class="latest_image"><img src="/images/loi.PNG" alt=""></div></div>
+								<div class="latest_content">
+									<div class="latest_title"><a href="#">Une loi criminalisant le viol et la pédophilie votée au Sénégal</a></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+    </div>
+    
+
+ </br>
+
+
+<!-- Footer -->
+
+	<footer class="footer" style="background-image: url('footer.jpg');>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="t.jpg" data-speed="0.8"></div>
+		<div class="footer_content">
+			<div class="container">
+				<div class="row">
+
+					
+					
+
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer_bar"  style="background-color:#232323 ;">
+			<div class="container">
+				<div class="row">
+					<div class="col"   >
+						<div class="footer_bar_content d-flex flex-sm-row flex-column align-items-lg-center align-items-start justify-content-start">
+							<nav class="footer_nav" style="background-color:#232323 ">
+								<ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+									<li class="m"><a href="{{path('acceuil')}}"><strong> ACCEUIL</strong> </a> 
+										<li class="m">  <a href=mespages/hopitaux><strong>HOPITAUX</strong></a> </li>
+										<li class="m"><a href=/specialiste><strong>SPECIALITES</strong></a></li> 
+										<li class="m"><a href=/inscription><strong>RENDEZ-VOUS</strong></a> </li>
+										<li class="m"><a href=/contact><strong>CONTACTER-NOUS</strong></a></li>
+								</ul>
+							</nav>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="https://www.fonekkdocteur.com/js/jquery-3.3.1.min.js"></script>
+<script src="https://www.fonekkdocteur.com/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="https://www.fonekkdocteur.com/plugins/easing/easing.js"></script>
+<script src="https://www.fonekkdocteur.com/plugins/parallax-js-master/parallax.min.js"></script>
+
+<script src="https://www.fonekkdocteur.com/js/custom.js"></script>
+
+
+{% endblock %}
+    </body>
+</html>

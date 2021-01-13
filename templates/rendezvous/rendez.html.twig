@@ -1,0 +1,137 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rendez-Vous{% endblock %}
+
+ {% block stylesheets %}
+ <link rel="icon" href="/images/favicon.png">
+ <style>
+
+form label {
+    color: blue;
+     padding-right: 50px;
+     font-weight: bold;
+     font-size: 18px;
+     width: 280px;
+      form_widget: 300px;
+       
+}
+.foo {
+     width: 500px;
+     height: 35px;
+     padding-top: 6px;
+}
+button{
+     width: 200px;
+}
+.btn-success{
+    margin-left: 170px;
+    margin: 40px;
+}
+ </style>
+         <link rel="stylesheet"   href="/css/blog.css">
+          <link rel="stylesheet"   href="/css/auth.css">
+         <link rel="stylesheet"   href="/bootstrap.min.css">
+         <link rel="stylesheet"   href="/js/jquery-3.4.1.js">
+         <link rel="stylesheet"   href="/js/bootstrap.min.js">
+         <link rel="stylesheet"   href="/js/popper.js">
+		 <link rel="stylesheet"   href="/css/font-awesome.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet"   href="/css/bootstrap-theme.css">
+ {% endblock %}
+
+{% block body %}
+<div class="container5">
+    <div class="row">
+        <div class="col-6">
+           <a href="{{path('acceuil')}}">   <h3 contenteditable data-heading="Frozen" 
+                style=" left: 20%;
+                color: transparent;
+                font-size: 5vw;
+                margin: 0;
+                font-family: 'frozen', serif;
+                font-weight: 700;
+                background: url(/images/8.jpg);
+                -webkit-background-clip: text;
+                background-size: contain;
+                width: 100%;">MyRendez-Vous
+            </h3></a>
+        </div>
+         <div class="col">
+          <p><a href="/connexion">Se Connecter </a></strong><p> 
+        </div>
+  </div>
+    </div>
+</div>
+       <br> 
+    <p class="card-text" style="text-align:left; ">
+               Une simple recherche sur MyRendez-Vous.com par le nom du
+                 professionnel ou par spécialité et ville vous permet de trouver en un clic un professionnel
+                  disponible près de chez vous.
+                  <br>
+              
+La simplicité du système vous permet en tant que patient ou client de prendre vos rendez-vous en
+ quelques clics sans même avoir besoin de créer un compte.
+Votre rendez-vous est confirmé immédiatement, vous recevez une confirmation par E-mail 
+dans les minutes qui suivent, pas besoin d'attendre pour savoir si votre rendez-vous est
+ validé ou non par le professionnel.
+            </p>
+            <br>
+
+ <!-- zone de connexion -->
+<h4> Formulaire de Prise de Renez-vous </h4>
+<div class="form">
+{{ form_start(form) }}
+{{ form_row(form.nom, {'label': 'Nom ',  'attr': {'placeholder': 'entrer votre nom...', 'class': 'foo'}  }) }}
+{{ form_row(form.prenom, {'label': 'Prenom ', 'attr': {'placeholder': 'entrer votre prenom...', 'class': 'foo'}  }) }}    
+{{ form_row(form.email, {'attr': {'placeholder': 'email...', 'class': 'foo'}  }) }}
+{{ form_row(form.adresse, {'label': 'adresse ', 'attr': {'placeholder': 'adresse...', 'class': 'foo'}  }) }}
+{{ form_row(form.telephone, {'label': 'telephone ', 'attr': {'placeholder': 'telephone...', 'class': 'foo'}  }) }}       
+{{ form_row(form.dates, {'label': 'dates ', 'attr': {'placeholder': 'dates...', 'class': 'foo'}  }) }}       
+
+<button type="submit" class="btn btn-success">Envoyer</button>
+{{ form_end(form) }}
+</div>
+
+
+
+<!-- Footer -->
+
+	<footer class="footer" style="background-image: url('footer.jpg');>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="t.jpg" data-speed="0.8"></div>
+		<div class="footer_content">
+			<div class="container">
+				<div class="row">
+
+					
+					
+
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer_bar"  style="background-color:#232323 ;">
+			<div class="container">
+				<div class="row">
+					<div class="col"   >
+						<div class="footer_bar_content d-flex flex-sm-row flex-column align-items-lg-center align-items-start justify-content-start">
+							<nav class="footer_nav" style="background-color:#232323 ">
+								<ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+									<li class="m"><a href="{{path('acceuil')}}"><strong> ACCEUIL</strong> </a> 
+										<li class="m">  <a href=mespages/hopitaux><strong>HOPITAUX</strong></a> </li>
+										<li class="m"><a href=mespages/specialiste><strong>SPECIALITES</strong></a></li> 
+										<li class="m"><a href=/inscription><strong>RENDEZ-VOUS</strong></a> </li>
+										<li class="m"><a href=mespages/contact><strong>CONTACTER-NOUS</strong></a></li>
+								</ul>
+							</nav>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+{% endblock %}

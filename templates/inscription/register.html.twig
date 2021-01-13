@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+ {% block stylesheets %}
+ <link rel="icon" href="/images/favicon.png">
+ <style>
+
+form label {
+    color: blue;
+     padding-right: 50px;
+     font-weight: bold;
+     font-size: 18px;
+     width: 280px;
+      form_widget: 300px;
+       
+}
+.foo {
+     width: 500px;
+     height: 35px;
+     padding-top: 6px;
+}
+button{
+     width: 200px;
+}
+.btn-success{
+    margin-left: 170px;
+    margin: 40px;
+}
+ </style>
+         <link rel="stylesheet"   href="/css/blog.css">
+          <link rel="stylesheet"   href="/css/auth.css">
+         <link rel="stylesheet"   href="/bootstrap.min.css">
+         <link rel="stylesheet"   href="/js/jquery-3.4.1.js">
+         <link rel="stylesheet"   href="/js/bootstrap.min.js">
+         <link rel="stylesheet"   href="/js/popper.js">
+		 <link rel="stylesheet"   href="/css/font-awesome.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet"   href="/css/bootstrap-theme.css">
+ {% endblock %}
+
+{% block body %}
+<div class="container5">
+    <div class="row">
+        <div class="col-6">
+           <a href="{{path('acceuil')}}">   <h3 contenteditable data-heading="Frozen" 
+                style=" left: 20%;
+                color: transparent;
+                font-size: 5vw;
+                margin: 0;
+                font-family: 'frozen', serif;
+                font-weight: 700;
+                background: url(/images/8.jpg);
+                -webkit-background-clip: text;
+                background-size: contain;
+                width: 100%;">MyRendez-Vous
+            </h3></a>
+        </div>
+         <div class="col">
+          <p><a href="/connexion">Se Connecter </a></strong><p> 
+        </div>
+  </div>
+    </div>
+</div>
+        
+
+ <!-- zone de connexion -->
+<h4> Creation de compte </h4>
+<div class="form">
+{{ form_start(form) }}
+{{ form_row(form.nom, {'label': 'Nom ',  'attr': {'placeholder': 'entrer votre nom...', 'class': 'foo'}  }) }}
+{{ form_row(form.prenom, {'label': 'Prenom ', 'attr': {'placeholder': 'entrer votre prenom...', 'class': 'foo'}  }) }}    
+{{ form_row(form.email, {'attr': {'placeholder': 'email...', 'class': 'foo'}  }) }}
+{{ form_row(form.password, {'label': 'Mot de Passe ', 'attr': {'placeholder': 'password...', 'class': 'foo'}  }) }}
+{{ form_row(form.confPassword, {'label': 'Confirmation Mot de Passe ', 'attr': {'placeholder': 'repeter le mot de passe...', 'class': 'foo'}  }) }}         
+{{ form_row(form.adresse, {'label': 'adresse ', 'attr': {'placeholder': 'adresse...', 'class': 'foo'}  }) }}
+{{ form_row(form.telephone, {'label': 'telephone ', 'attr': {'placeholder': 'telephone...', 'class': 'foo'}  }) }}       
+
+<button type="submit" class="btn btn-success">Inscription</button>
+<br>OU <a href="/connexion" >Se connecter</a>
+{{ form_end(form) }}
+</div>
+{% endblock %}
